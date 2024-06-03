@@ -21,7 +21,7 @@ const saleOrdersSlice = createSlice({
             if (orderIndex !== -1) {
                 state.active[orderIndex] = {
                     ...action.payload,
-                    invoiceDate: action.payload.invoiceDate // Serialize date
+                    invoiceDate: action.payload.invoiceDate 
                 };
             }
         },

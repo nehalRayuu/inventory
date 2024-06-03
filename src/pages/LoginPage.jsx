@@ -43,7 +43,12 @@ const LoginPage = () => {
                 {errors.password && <span>{errors.password.message}</span>}
                 <Button type="submit" colorScheme="teal">Login</Button>
             </VStack>
+            <Box>
+                user : user
+                password : password
+            </Box>
         </Box>
+        
     );
 };
 

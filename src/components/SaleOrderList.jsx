@@ -39,11 +39,11 @@ const SaleOrderList = () => {
         <>
             <Box p={4}>
                 <Flex 
-                    justifyContent={{ base: 'center', md: 'space-between' }} // Center align buttons on small screens
+                    justifyContent={{ base: 'center', md: 'space-between' }}
                     alignItems="center" 
-                    flexDirection={{ base: 'column', md: 'row' }} // Stack buttons vertically on small screens
+                    flexDirection={{ base: 'column', md: 'row' }} 
                     mb={4}
-                    gap={2} // Add gap between buttons for spacing
+                    gap={2} 
                 >
                     <Flex justifyContent="center" alignItems="center" flexDirection={{ base: 'column', md: 'row' }} gap={2}>
                         <Button variant="outline" onClick={handleShowActiveOrders}>Active Sale Orders</Button>
