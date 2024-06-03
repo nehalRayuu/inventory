@@ -26,7 +26,7 @@ const LoginPage = () => {
     };
 
     return (
-        <Box display="flex" alignItems="center" justifyContent="center" height="100vh">
+        <Box display="flex" flexDirection="column" alignItems="center" justifyContent="center" height="100vh">
             <VStack as="form" onSubmit={handleSubmit(onSubmit)} spacing={4}>
                 <Input 
                     placeholder="Username" 
@@ -43,7 +43,7 @@ const LoginPage = () => {
                 {errors.password && <span>{errors.password.message}</span>}
                 <Button type="submit" colorScheme="teal">Login</Button>
             </VStack>
-            <Box display="flex"  >
+            <Box display="flex" >
                 user : user
                 password : password
             </Box>
